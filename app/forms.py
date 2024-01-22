@@ -5,7 +5,7 @@ class UserForm(forms.ModelForm):
     
     class Meta:
         model =User 
-        fields = ['username','email','password']
+        fields= ['username','email','password']
         widgets={'password':forms.PasswordInput}
         help_texts={'username':''}
         
@@ -14,8 +14,8 @@ class UserForm(forms.ModelForm):
 class ProfileForm(forms.ModelForm):
     
     class Meta:
-        model =Profile 
-        fields =['address','profile_pic']
+        model=Profile 
+        fields=['address','profile_pic']
        
 
   
